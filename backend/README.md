@@ -1,10 +1,10 @@
 # SignalAyiti, API back-end (Laravel)
 
-API REST du projet SignalAyiti, plateforme de signalement et de suivi des problemes
-communautaires en Haiti. Voir le [README principal](../README.md) pour la presentation
-complete du projet et les instructions d'installation globales.
+API REST du projet SignalAyiti, plateforme de signalement et de suivi des problèmes
+communautaires en Haïti. Voir le [README principal](../README.md) pour la présentation
+complète du projet et les instructions d'installation globales.
 
-## Demarrage rapide
+## Démarrage rapide
 
 ```bash
 composer install
@@ -18,9 +18,9 @@ php artisan serve
 
 L'API est alors disponible sur `http://127.0.0.1:8000/api`.
 
-## Comptes de demonstration (apres le seed)
+## Comptes de démonstration (après le seed)
 
-| Role    | Email                    | Mot de passe |
+| Rôle    | Email                    | Mot de passe |
 |---------|--------------------------|---------------|
 | Agent   | agent@signalayiti.ht     | password      |
 | Citoyen | citoyen@signalayiti.ht   | password      |

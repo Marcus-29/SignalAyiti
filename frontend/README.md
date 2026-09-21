@@ -1,9 +1,9 @@
 # SignalAyiti, front-end (React)
 
 Interface web du projet SignalAyiti. Voir le [README principal](../README.md) pour la
-presentation complete du projet.
+présentation complète du projet.
 
-## Demarrage rapide
+## Démarrage rapide
 
 ```bash
 npm install

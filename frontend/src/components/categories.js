@@ -1,10 +1,10 @@
 export const CATEGORIES = [
   { value: "route", label: "Route", icone: "🛣️" },
   { value: "eau", label: "Eau potable", icone: "💧" },
-  { value: "electricite", label: "Electricite", icone: "⚡" },
-  { value: "dechets", label: "Dechets", icone: "🗑️" },
-  { value: "eclairage", label: "Eclairage public", icone: "💡" },
-  { value: "securite", label: "Securite", icone: "🚨" },
+  { value: "electricite", label: "Électricité", icone: "⚡" },
+  { value: "dechets", label: "Déchets", icone: "🗑️" },
+  { value: "eclairage", label: "Éclairage public", icone: "💡" },
+  { value: "securite", label: "Sécurité", icone: "🚨" },
   { value: "autre", label: "Autre", icone: "📌" },
 ];
 
@@ -19,6 +19,6 @@ export function categorieIcone(value) {
 export const STATUTS = [
   { value: "nouveau", label: "Nouveau" },
   { value: "en_cours", label: "En cours" },
-  { value: "resolu", label: "Resolu" },
-  { value: "rejete", label: "Rejete" },
+  { value: "resolu", label: "Résolu" },
+  { value: "rejete", label: "Rejeté" },
 ];

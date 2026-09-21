@@ -16,7 +16,7 @@ class EnsureUserIsAgent
     public function handle(Request $request, Closure $next): Response
     {
         if (! $request->user() || ! $request->user()->isAgent()) {
-            abort(403, 'Reserve aux agents communaux.');
+            abort(403, 'Réservé aux agents communaux.');
         }
 
         return $next($request);

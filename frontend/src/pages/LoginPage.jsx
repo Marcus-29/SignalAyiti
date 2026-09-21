@@ -47,7 +47,7 @@ export default function LoginPage() {
           Pas encore de compte ? <Link to="/inscription">Inscrivez-vous</Link>
         </p>
         <p className="muted auth-demo">
-          Compte de demonstration agent : agent@signalayiti.ht / password
+          Compte de démonstration agent : agent@signalayiti.ht / password
         </p>
       </form>
     </div>

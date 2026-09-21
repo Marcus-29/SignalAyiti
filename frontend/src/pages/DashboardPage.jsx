@@ -24,13 +24,13 @@ export default function DashboardPage() {
       <section className="stats-row">
         <StatCard label="Nouveaux" value={stats.par_statut.nouveau || 0} tone="nouveau" />
         <StatCard label="En cours" value={stats.par_statut.en_cours || 0} tone="en_cours" />
-        <StatCard label="Resolus" value={stats.par_statut.resolu || 0} tone="resolu" />
-        <StatCard label="Rejetes" value={stats.par_statut.rejete || 0} tone="rejete" />
+        <StatCard label="Résolus" value={stats.par_statut.resolu || 0} tone="resolu" />
+        <StatCard label="Rejetés" value={stats.par_statut.rejete || 0} tone="rejete" />
       </section>
 
       <div className="dashboard-columns">
         <div className="card">
-          <h2>Par categorie</h2>
+          <h2>Par catégorie</h2>
           <ul className="stat-list">
             {Object.entries(stats.par_categorie).map(([categorie, total]) => (
               <li key={categorie}>

@@ -30,7 +30,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'role' => 'citoyen',
-            'quartier' => fake()->randomElement(['Delmas 33', 'Petion-Ville', 'Carrefour-Feuilles', 'Cap-Haitien Centre', 'Croix-des-Bouquets']),
+            'quartier' => fake()->randomElement(['Delmas 33', 'Pétion-Ville', 'Carrefour-Feuilles', 'Cap-Haïtien Centre', 'Croix-des-Bouquets']),
             'telephone' => fake()->numerify('+509 ## ## ####'),
             'remember_token' => Str::random(10),
         ];

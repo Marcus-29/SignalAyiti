@@ -38,15 +38,15 @@ export default function NewSignalementPage() {
   return (
     <div className="form-page">
       <form className="card form-card" onSubmit={handleSubmit}>
-        <h1>Signaler un probleme</h1>
+        <h1>Signaler un problème</h1>
         <p className="muted">
-          Decrivez le probleme observe dans votre quartier. Plus votre description est precise,
+          Décrivez le problème observé dans votre quartier. Plus votre description est précise,
           plus l'agent pourra intervenir rapidement.
         </p>
         {errors.general && <p className="form-error">{errors.general[0]}</p>}
 
         <label>
-          Categorie
+          Catégorie
           <select value={form.categorie} onChange={update("categorie")}>
             {CATEGORIES.map((c) => (
               <option key={c.value} value={c.value}>
@@ -69,7 +69,7 @@ export default function NewSignalementPage() {
             rows={5}
             value={form.description}
             onChange={update("description")}
-            placeholder="Decrivez le probleme, depuis quand il existe, sa gravite..."
+            placeholder="Décrivez le problème, depuis quand il existe, sa gravité..."
           />
           {errors.description && <span className="field-error">{errors.description[0]}</span>}
         </label>

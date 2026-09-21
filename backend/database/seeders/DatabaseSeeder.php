@@ -47,9 +47,9 @@ class DatabaseSeeder extends Seeder
                 'ancien_statut' => 'nouveau',
                 'nouveau_statut' => $signalement->statut,
                 'commentaire' => match ($signalement->statut) {
-                    'en_cours' => 'Une equipe technique a ete envoyee sur place.',
-                    'resolu' => 'Le probleme a ete corrige par les services de la commune.',
-                    'rejete' => 'Signalement en dehors du perimetre de la commune.',
+                    'en_cours' => 'Une équipe technique a été envoyée sur place.',
+                    'resolu' => 'Le problème a été corrigé par les services de la commune.',
+                    'rejete' => 'Signalement en dehors du périmètre de la commune.',
                     default => null,
                 },
             ]);
@@ -57,7 +57,7 @@ class DatabaseSeeder extends Seeder
             Notification::create([
                 'user_id' => $signalement->user_id,
                 'signalement_id' => $signalement->id,
-                'message' => "Votre signalement \"{$signalement->titre}\" est passe au statut : ".Signalement::statutLabel($signalement->statut).'.',
+                'message' => "Votre signalement \"{$signalement->titre}\" est passé au statut : ".Signalement::statutLabel($signalement->statut).'.',
                 'lu' => fake()->boolean(40),
                 'created_at' => $intervention->created_at,
             ]);

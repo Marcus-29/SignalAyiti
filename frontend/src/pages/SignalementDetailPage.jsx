@@ -49,7 +49,7 @@ export default function SignalementDetailPage() {
   }
 
   async function handleDelete() {
-    if (!window.confirm("Supprimer definitivement ce signalement ?")) return;
+    if (!window.confirm("Supprimer définitivement ce signalement ?")) return;
     await api.delete(`/signalements/${id}`);
     navigate("/signalements");
   }
@@ -79,11 +79,11 @@ export default function SignalementDetailPage() {
         <p className="detail-description">{signalement.description}</p>
 
         {signalement.photo_url && (
-          <img src={signalement.photo_url} alt="Photo du probleme signale" className="detail-photo" />
+          <img src={signalement.photo_url} alt="Photo du problème signalé" className="detail-photo" />
         )}
 
         <p className="muted">
-          Signale par {signalement.auteur} le {new Date(signalement.created_at).toLocaleDateString("fr-FR")}
+          Signalé par {signalement.auteur} le {new Date(signalement.created_at).toLocaleDateString("fr-FR")}
         </p>
 
         {peutSupprimer && (
@@ -117,7 +117,7 @@ export default function SignalementDetailPage() {
               rows={3}
               value={commentaire}
               onChange={(e) => setCommentaire(e.target.value)}
-              placeholder="Ex : une equipe technique a ete envoyee sur place."
+              placeholder="Ex : une équipe technique a été envoyée sur place."
             />
           </label>
           <button type="submit" className="btn btn-primary" disabled={saving}>

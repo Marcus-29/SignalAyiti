@@ -20,7 +20,7 @@ export default function SignalementCard({ signalement }) {
       <p className="signalement-description">{signalement.description}</p>
       <div className="signalement-card-footer">
         <span className="muted">
-          {signalement.auteur ? `Signale par ${signalement.auteur}` : ""}
+          {signalement.auteur ? `Signalé par ${signalement.auteur}` : ""}
         </span>
         <time className="muted">
           {new Date(signalement.created_at).toLocaleDateString("fr-FR")}

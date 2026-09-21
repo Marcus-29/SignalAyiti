@@ -39,7 +39,7 @@ export function AuthProvider({ children }) {
     try {
       await api.post("/logout");
     } catch {
-      // on se deconnecte localement meme si la requete echoue
+      // on se déconnecte localement même si la requête échoue
     }
     localStorage.removeItem("signalayiti_token");
     localStorage.removeItem("signalayiti_user");

@@ -22,20 +22,20 @@ export default function Navbar() {
         <nav className="navbar-links">
           {user ? (
             <>
-              <Link to="/signalements/nouveau">Signaler un probleme</Link>
+              <Link to="/signalements/nouveau">Signaler un problème</Link>
               <Link to="/signalements">{isAgent ? "Tous les signalements" : "Mes signalements"}</Link>
               {isAgent && <Link to="/tableau-de-bord">Tableau de bord</Link>}
               <Link to="/notifications">Notifications</Link>
               <span className="navbar-user">{user.name}</span>
               <button type="button" className="btn btn-ghost" onClick={handleLogout}>
-                Deconnexion
+                Déconnexion
               </button>
             </>
           ) : (
             <>
               <Link to="/connexion">Connexion</Link>
               <Link to="/inscription" className="btn btn-primary btn-sm">
-                Creer un compte
+                Créer un compte
               </Link>
             </>
           )}

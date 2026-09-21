@@ -1,8 +1,8 @@
 const LABELS = {
   nouveau: "Nouveau",
   en_cours: "En cours",
-  resolu: "Resolu",
-  rejete: "Rejete",
+  resolu: "Résolu",
+  rejete: "Rejeté",
 };
 
 export default function StatutBadge({ statut }) {

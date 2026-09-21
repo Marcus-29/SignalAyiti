@@ -20,8 +20,8 @@ class Signalement extends Model
     public const STATUT_LABELS = [
         'nouveau' => 'nouveau',
         'en_cours' => 'en cours',
-        'resolu' => 'resolu',
-        'rejete' => 'rejete',
+        'resolu' => 'résolu',
+        'rejete' => 'rejeté',
     ];
 
     public static function statutLabel(string $statut): string

@@ -39,7 +39,7 @@ export default function RegisterPage() {
   return (
     <div className="auth-page">
       <form className="card auth-card" onSubmit={handleSubmit}>
-        <h1>Creer un compte citoyen</h1>
+        <h1>Créer un compte citoyen</h1>
         {errors.general && <p className="form-error">{errors.general[0]}</p>}
         <label>
           Nom complet
@@ -56,7 +56,7 @@ export default function RegisterPage() {
           <input value={form.quartier} onChange={update("quartier")} placeholder="Ex : Delmas 33" />
         </label>
         <label>
-          Telephone (facultatif)
+          Téléphone (facultatif)
           <input value={form.telephone} onChange={update("telephone")} placeholder="+509 00 00 0000" />
         </label>
         <label>
@@ -74,10 +74,10 @@ export default function RegisterPage() {
           />
         </label>
         <button type="submit" className="btn btn-primary" disabled={loading}>
-          {loading ? "Creation..." : "Creer mon compte"}
+          {loading ? "Création..." : "Créer mon compte"}
         </button>
         <p className="muted">
-          Deja un compte ? <Link to="/connexion">Connectez-vous</Link>
+          Déjà un compte ? <Link to="/connexion">Connectez-vous</Link>
         </p>
       </form>
     </div>

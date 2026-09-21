@@ -56,7 +56,7 @@ export default function SignalementsListPage() {
           ))}
         </select>
         <select value={filtres.categorie} onChange={updateFiltre("categorie")}>
-          <option value="">Toutes les categories</option>
+          <option value="">Toutes les catégories</option>
           {CATEGORIES.map((c) => (
             <option key={c.value} value={c.value}>
               {c.label}
@@ -74,7 +74,7 @@ export default function SignalementsListPage() {
       {error && <p className="form-error">{error}</p>}
 
       {!loading && !error && signalements.length === 0 && (
-        <p className="muted">Aucun signalement ne correspond a ces criteres pour le moment.</p>
+        <p className="muted">Aucun signalement ne correspond à ces critères pour le moment.</p>
       )}
 
       <div className="signalement-list">
@@ -86,7 +86,7 @@ export default function SignalementsListPage() {
       {meta && meta.last_page > 1 && (
         <div className="pagination">
           <button disabled={page <= 1} onClick={() => setPage((p) => p - 1)} className="btn btn-ghost">
-            Page precedente
+            Page précédente
           </button>
           <span className="muted">
             Page {meta.current_page} sur {meta.last_page}

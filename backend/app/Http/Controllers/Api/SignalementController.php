@@ -87,7 +87,7 @@ class SignalementController extends Controller
         Notification::create([
             'user_id' => $signalement->user_id,
             'signalement_id' => $signalement->id,
-            'message' => "Votre signalement \"{$signalement->titre}\" est passe au statut : ".Signalement::statutLabel($nouveauStatut).'.',
+            'message' => "Votre signalement \"{$signalement->titre}\" est passé au statut : ".Signalement::statutLabel($nouveauStatut).'.',
         ]);
 
         return new SignalementResource($signalement->load(['user', 'interventions.agent']));
@@ -99,7 +99,7 @@ class SignalementController extends Controller
         $peutSupprimer = $user->isAgent() || ($signalement->user_id === $user->id && $signalement->statut === 'nouveau');
 
         if (! $peutSupprimer) {
-            abort(403, 'Ce signalement ne peut plus etre supprime.');
+            abort(403, 'Ce signalement ne peut plus être supprimé.');
         }
 
         if ($signalement->photo_path) {
@@ -108,6 +108,6 @@ class SignalementController extends Controller
 
         $signalement->delete();
 
-        return response()->json(['message' => 'Signalement supprime.']);
+        return response()->json(['message' => 'Signalement supprimé.']);
     }
 }
